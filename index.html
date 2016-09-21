@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>QRder SCAN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href="assets/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+
+</head>
+
+<body>
+
+    <section id="topContainer">
+        <div id="navigationWrap" class="container">
+            <div class="row">
+                <div class="col-lg-3"><img src="yellow/assets/img/logo.png" alt="QRderSCAN">
+                </div>
+
+            </div>
+
+            <div class="alignTextCenter">
+                <br>
+                <br>
+                <strong>Keine Lust auf den Kellner zu warten ?</strong>
+                <br>
+                <br>Dann einfach nur den abgebildeten QR-Code scannen, bestellen und genießen.<br><br>     
+                <div id="results"></div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row slider"><span class="row newsletterSubmit text-center">
+            <center><input type="button" id="startScan" class="btn-primary" value="QR CODE SCANNEN"><br>
+            <br><div id="buynow"></div>
+
+            </center></span>
+            </div>
+
+         </div>
+
+        <div class="wireframe1"></div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+    <!-- QRSCAN -->
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+    function doalert(obj) {
+        alert(obj.getAttribute("results"));
+        return false;
+    }
+</script>
+    <!-- Easing -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+
+    <!-- Theme JS -->
+    <script src="assets/js/coretheme.min.js" type="text/javascript"></script>
+
+    <!-- Start Color Switcher JS -->
+    <!-- End Color Switcher JS -->
+
+</body>
+
+</html>
+
+<!-- Localized -->

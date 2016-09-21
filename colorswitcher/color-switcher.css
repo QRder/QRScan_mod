@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+
+#color-switcher-container,
+#color-switcher-container * {
+	box-sizing: border-box;
+}
+#color-switcher-container {
+	position: fixed;
+	left: -208px;
+	top: 100px;
+	z-index: 9999;
+}
+#color-switcher {
+	position: relative;
+	width: 208px;
+	background: #FFF;
+	border: 2px solid #CCC;
+	border-left: none;
+	padding: 17px 27px 30px;
+	border-bottom-right-radius: 5px
+}
+#color-switcher h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #999;
+	text-transform: uppercase;
+	margin: 0;
+}
+#color-swatches {
+	margin: 28px 0;
+}
+.color-swatch {
+	float: left;
+	background: #FFF;
+	border: 2px solid #EEE;
+	padding: 1px;
+	margin: 2px;
+}
+.color-swatch.active {
+	border-color: #666;
+}
+.color-swatch a {
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+#color-switcher-toggle {
+	display: block;
+	width: 45px;
+	position: absolute;
+	right: -45px;
+	top: -2px;
+	background: #FFF;
+	border: 2px solid #CCC;
+	border-left: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 10px;
+}
+#color-switcher-toggle i {
+	display: block;
+	width: 25px;
+	height: 25px;
+	font-size: 25px;
+	text-align: center;
+	color: #999;
+	-webkit-transition: color .25s ease;
+	transition: color .25s ease;
+}
+#color-switcher-toggle:hover {
+	text-decoration: none;
+}
+#color-switcher-toggle:focus {
+	text-decoration: none;
+}
+#color-switcher-toggle:hover i {
+	color: #666;
+	text-decoration: none;
+}
+#color-switcher-done {
+	font-family: 'Lato', sans-serif;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 15px;
+	color: #999 !important;
+	background: none;
+	border: 2px solid #CCC;
+	outline: none;
+	white-space: nowrap;
+	padding: 14px 24px;
+	margin: 0 3px;
+	border-radius: 5px;
+	box-shadow: none;
+	-webkit-transition: color .25s ease, border-color .25s ease, padding .25s ease;
+	transition: color .25s ease, border-color .25s ease, padding .25s ease;
+}
+#color-switcher-done:hover {
+	color: #666 !important;
+	border-color: #666;
+}
+
+/* --------------------------------------------------------- */
+/* !Spinner */
+/* --------------------------------------------------------- */
+
+.color-switcher-spinner {
+	-webkit-animation: mtphr-colorswitcher-spinner-rotation .8s infinite linear;
+	-moz-animation: mtphr-colorswitcher-spinner-rotation .8s infinite linear;
+	-o-animation: mtphr-colorswitcher-spinner-rotation .8s infinite linear;
+	animation: mtphr-colorswitcher-spinner-rotation .8s infinite linear;
+}
+.color-switcher-spinner-slow {
+	-webkit-animation: mtphr-colorswitcher-spinner-rotation 2s infinite linear;
+	-moz-animation: mtphr-colorswitcher-spinner-rotation 2s infinite linear;
+	-o-animation: mtphr-colorswitcher-spinner-rotation 2s infinite linear;
+	animation: mtphr-colorswitcher-spinner-rotation 2s infinite linear;
+}
+@-webkit-keyframes mtphr-colorswitcher-spinner-rotation {
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes mtphr-colorswitcher-spinner-rotation {
+	from {-moz-transform: rotate(0deg);}
+	to {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes mtphr-colorswitcher-spinner-rotation {
+	from {-o-transform: rotate(0deg);}
+	to {-o-transform: rotate(359deg);}
+}
+@keyframes mtphr-colorswitcher-spinner-rotation {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(359deg);}
+}
