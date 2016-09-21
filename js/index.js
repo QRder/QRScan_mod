@@ -13,10 +13,11 @@ function startScan() {
             var s = "Sie sitzen an  " + result.text + "<br>bitte nehmen Sie nun Ihre Bestellung vor";
             resultDiv.innerHTML = s;
         document.getElementById("startScan").value = "" + result.text ;
+        document.getElementById("startScan").id = "table" ;
             var elem = document.getElementById("buynow");
             var newtag = document.createElement("input");
             newtag.setAttribute("type","button");
-            newtag.setAttribute("onclick","window.open(" + result.text + ", '_system')");
+            newtag.setAttribute(".click(function()" + result.text + ", '_system')");
             newtag.setAttribute("id","startBuy");
             newtag.setAttribute("class","btn-primary");
             newtag.setAttribute("value","JETZT BESTELLEN");
