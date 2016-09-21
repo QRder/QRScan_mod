@@ -6,17 +6,6 @@ function init() {
     resultDiv = document.querySelector("#results");
 }
 
-var startBuy;
-    startBuyDiv = document.querySelector("#results");
-
-function startBuy() {
-    window.location.href = "" + result.text ;
-}
-
-document.getElementById("buynow").addEventListener("click", loadIndex, false);
-    location.href = "" + result.text;
-  }
-
 function startScan() {
 
     cordova.plugins.barcodeScanner.scan(
