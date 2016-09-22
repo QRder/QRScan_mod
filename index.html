@@ -37,7 +37,7 @@
                 <strong>Keine Lust auf den Kellner zu warten ?</strong>
                 <br>
                 <br>Dann einfach nur den abgebildeten QR-Code scannen, bestellen und genießen.<br><br>     
-                <div id="results"></div>
+                <div id="results"></div><br>
 
             </div>
         </div>
@@ -65,6 +65,12 @@
     <script>
     function doalert(obj) {
         alert(obj.getAttribute("results"));
+        return false;
+    }
+</script>
+<script>
+    function doalert(obj) {
+        alert(obj.getAttribute("buynow"));
         return false;
     }
 </script>
