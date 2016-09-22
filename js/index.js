@@ -13,7 +13,6 @@ function startScan() {
             var s = "Sie sitzen an  " + result.text + "<br>bitte nehmen Sie nun Ihre Bestellung vor";
             resultDiv.innerHTML = s;
         document.getElementById("startScan").value = "" + result.text ;
-        document.getElementById("startScan").id = 'table';
             var elem = document.getElementById("buynow");
             var newtag = document.createElement("input");
             newtag.setAttribute("type","button");
